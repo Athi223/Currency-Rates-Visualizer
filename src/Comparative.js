@@ -1,6 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import CurrencyList from './CurrencyList';
+import InfoBox from './InfoBox';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, CartesianGrid, Tooltip, Legend } from 'recharts';
 
@@ -15,13 +16,9 @@ export default class Comparative extends React.Component {
         return(
             <div className="Comparative mx-4 py-4">
                 <div className="input-group input-group-lg mb-4">
-					<div className="input-group-prepend">
-						<label className="input-group-text" htmlFor="baseCurrency" style={{ fontWeight: "bold" }}>Base Currency:</label>
-					</div>
+					<InfoBox htmlFor="baseCurrency" content="Base Currency:" />
 					<CurrencyList id="baseCurrency" onChange={this.updateChart} />
-                    <div className="input-group-prepend ml-4">
-						<label className="input-group-text" htmlFor="indexCurrency" style={{ fontWeight: "bold" }}>Index Currency:</label>
-					</div>
+					<InfoBox htmlFor="indexCurrency" content="Index Currency:" />
 					<CurrencyList id="indexCurrency" onChange={this.updateChart} />
 				</div>
                 <ResponsiveContainer height="95%">

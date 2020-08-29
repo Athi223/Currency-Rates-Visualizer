@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import AllCurrencies from './AllCurrencies';
 import Comparative from './Comparative';
+import Crypto from './Crypto';
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
   
 export default function App() {
@@ -12,11 +13,15 @@ export default function App() {
 					<div className="navbar-nav">
 						<NavLink exact activeClassName="active" className="nav-item nav-link font-big" to="/">All Currencies</NavLink>
 						<NavLink activeClassName="active" className="nav-item nav-link font-big" to="/comparative">Comparative</NavLink>
+						<NavLink activeClassName="active" className="nav-item nav-link font-big" to="/crypto">Crypto</NavLink>
 					</div>
 				</nav>
 				<Switch>
 					<Route path="/comparative">
 						<Comparative />
+					</Route>
+					<Route path="/crypto">
+						<Crypto />
 					</Route>
 					<Route path="/">
 						<AllCurrencies />

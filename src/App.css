@@ -2,7 +2,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.AllCurrencies, .Comparative {
+.AllCurrencies, .Comparative, .Crypto {
     height: 90vh;
     text-align: center;
 }
