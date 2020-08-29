@@ -1,13 +1,28 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .AllCurrencies, .Comparative, .Crypto {
-    height: 90vh;
-    text-align: center;
+	height: 90vh;
+	text-align: center;
 }
 
 .font-big {
-    font-size: 20px;
-    font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.App-logo {
+	animation: App-logo-spin infinite 20s linear;
+	height: 75vh;
+	pointer-events: none;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }

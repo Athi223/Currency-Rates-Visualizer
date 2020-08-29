@@ -21,7 +21,7 @@ export default class Crypto extends React.Component {
             <div className="Crypto mx-4 py-4">
 				<div className="input-group input-group-lg mb-4">
 					<InfoBox htmlFor="baseCurrency" content="Base Currency:" />
-					<CurrencyList id="baseCurrency" onChange={this.updateChart} />
+					<CurrencyList id="baseCurrency" onChange={this.updateChart} disabled={false} />
                     <InfoBox htmlFor="scale" content="Scale:" />
 					<Scale id="scale" onChange={this.updateScale} />
 				</div>
@@ -44,7 +44,7 @@ export default class Crypto extends React.Component {
         )
     }
     componentDidMount(){
-		document.title = 'Currency Rates Visualizer';
+		document.title = 'Cryptocurrency Rates Visualizer';
 		this.updateChart();
     }
     

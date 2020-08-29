@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CurrencyList(props) {
     return (
-        <select className="custom-select" id={props.id} onChange={props.onChange}>
+        <select className="custom-select" id={props.id} onChange={props.onChange} disabled={props.disabled} >
             <option value="USD" defaultValue>US Dollar</option>
             <option value="EUR">Euro</option>
             <option value="INR">Indian Rupee</option>

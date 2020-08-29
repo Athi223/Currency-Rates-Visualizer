@@ -21,7 +21,7 @@ export default class AllCurrencies extends React.Component {
 			<div className="AllCurrencies mx-4 py-4">
 				<div className="input-group input-group-lg mb-4">
 					<InfoBox htmlFor="baseCurrency" content="Base Currency:" />
-					<CurrencyList id="baseCurrency" onChange={this.updateChart} />
+					<CurrencyList id="baseCurrency" onChange={this.updateChart} disabled={false} />
 					<InfoBox htmlFor="scale" content="Scale:" />
 					<Scale id="scale" onChange={this.updateScale} />
 					<InfoBox htmlFor="datePicker" content="Date:" />
