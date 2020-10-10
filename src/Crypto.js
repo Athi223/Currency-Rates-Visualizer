@@ -18,7 +18,7 @@ export default class Crypto extends React.Component {
         const colors = ['#ff9a00', '#eb548c', '#bd00ff', '#6df0d2', '#e7e34e']
         console.log(this.state.data)
         return(
-            <div className="Crypto mx-4 py-4">
+            <div className="Crypto container py-4">
 				<div className="input-group input-group-lg mb-4">
 					<InfoBox htmlFor="baseCurrency" content="Base Currency:" />
 					<CurrencyList id="baseCurrency" onChange={this.updateChart} disabled={false} />
