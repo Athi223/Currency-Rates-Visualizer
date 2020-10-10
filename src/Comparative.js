@@ -18,7 +18,7 @@ export default class Comparative extends React.Component {
     render() {
 		if(this.state.active)
 			return(
-				<div className="Comparative mx-4 py-4">
+				<div className="Comparative container py-4">
 					<div className="input-group input-group-lg mb-4">
 						<InfoBox htmlFor="baseCurrency" content="Base Currency:" />
 						<CurrencyList id="baseCurrency" onChange={this.updateChart} disabled={false} />
