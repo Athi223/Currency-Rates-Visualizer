@@ -18,7 +18,7 @@ export default class AllCurrencies extends React.Component {
 	render() {
 		const colors = ['#ef4e32', '#7d3ac1', '#eb548c', '#e7e34e', '#6df0d2', '#ffa072', '#af48ce', '#1aa9f6']
 		return(
-			<div className="AllCurrencies container py-4">
+			<div className="AllCurrencies w-75 mx-auto py-4">
 				<div className="input-group input-group-lg mb-4">
 					<InfoBox htmlFor="baseCurrency" content="Base Currency:" />
 					<CurrencyList id="baseCurrency" onChange={this.updateChart} disabled={false} />
